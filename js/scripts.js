@@ -18,7 +18,8 @@ clickButton.addEventListener("click", changeBGcolor);
 
 function changeTextcontent()
 {
-    if (clickButton.textContent === "Clicked"){
+    if (clickButton.textContent === "Clicked")
+    {
         clickButton.textContent = "Clicked me!"
     }
     else{
@@ -26,3 +27,12 @@ function changeTextcontent()
     }
 }
 clickButton.addEventListener("click", changeTextcontent)
+
+function updateImage(){
+    let shoppingCart = document.getElementById('#shoppingCart');
+    shoppingCart.src = "image/shoppingCart.png";
+    shoppingCart.alt ="image"
+    shoppingCart.width = "200";
+    shoppingCart.height = "200";
+}
+clickButton.addEventListener("click", updateImage)
