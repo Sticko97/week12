@@ -29,10 +29,18 @@ function changeTextcontent()
 clickButton.addEventListener("click", changeTextcontent)
 
 function updateImage(){
-    let shoppingCart = document.getElementById('#shoppingCart');
-    shoppingCart.src = "image/shoppingCart.png";
-    shoppingCart.alt ="image"
-    shoppingCart.width = "200";
-    shoppingCart.height = "200";
+    const image = document.getElementById('#shoppingCart');
+    image.src = "./image/shoppingCart.png";
+    image.alt ="image"
+    image.width = "200";
+    image.height = "200";
 }
 clickButton.addEventListener("click", updateImage)
+
+const buttonContainer = document.querySelector('.buttonContainer');
+function changeBGGreen(e)
+{
+    e.target.classList.add("green");
+}
+
+buttonContainer.addEventListener("mouseover", changeBGGreen);
